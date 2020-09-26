@@ -1,0 +1,17 @@
+.cont {
+    margin-top: 0%;
+    width: 100%;
+    text-align: center;
+    background: url("../images/bg.jpg");
+    height: 100%;
+    margin-bottom: 10px;
+}
+.cont h1{
+    color: white;
+
+}
+header{
+    height: 100px;
+    background:linear-gradient(rgba(0, 0, 0,1),rgb(0, 0, 0,0.9)) url("../images/bg.jpg");
+}
+

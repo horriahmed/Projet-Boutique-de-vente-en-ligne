@@ -1,0 +1,351 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+.wrapper{
+    width : 1170px;
+    margin:auto;
+}
+header{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(255, 255, 255, 0.6)), url("../images/bg.jpg");
+    
+    height: 400px;
+    
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float:right;
+    list-style: none;
+    margin-top: 30px;
+
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+color:#fff;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 16px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;   
+    border-radius: 5px;
+}
+.logo img {
+    width: 100px;
+    float:left;
+    height: auto;
+}
+.welcome-text{
+    position: absolute;
+    width:600px;
+    height: 300px;
+    margin:  10% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border:1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/* boutique */
+
+div#panier, div#boutique {
+    background-color: white;
+	display : inline-block;
+	vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 16px;
+    width: 70%;
+    background: rgba(109,104,104,0.8);
+    height: 700px;
+    
+}
+
+div#boutique {
+    margin-top:0px;
+		width : 566px;	
+}
+
+
+div.achats, div#boutique {
+	overflow: auto;
+}
+
+div#panier, div#boutique {
+  box-shadow : 0px 0px 2px 2px rgba(80,64,64,0.5);
+	padding : 2px;
+    border-radius : 4px;
+    width: 70%;
+}
+
+div.achats {
+	height : 80%;
+	border : solid thin rgba(80,64,64,0.5);
+	padding : 2px;
+    border-radius : 4px;
+    background: rgba(212,212,212,0.8);
+}
+
+div#panier { 
+	width : 27%;
+	text-align : center;
+}
+
+input#filter {
+	width : 95%;
+	padding: 5px;
+}
+
+/* produits */
+div.produit {
+	width : 32.5%;	
+	position : relative;
+	text-align : center;
+	height : 240px;
+	display : inline-block;
+	background-color: rgba(212,212,212,0.7);
+    box-shadow: 0px 0px 6px 2px rgba(0,0,221,0.7);
+	border-radius : 4px;
+	margin: 8px 4px;
+}
+
+div.produit figure, div.produit div.description {
+	box-shadow : 0px 0px 4px 2px  rgba(150,255,200,0.75) inset;
+	border-radius : 4px;	
+}
+div.produit figure {
+	margin : auto;	
+	width : 90%;
+	height : 120px;
+	text-align : center;
+}
+div.produit figure img {
+	margin : 5px;
+	height : 93%;
+}
+
+div.produit h4 {
+	color : rgb(60,60,60);
+	text-align : left;
+	font-size : 12px;
+	margin : 0px;
+    padding : 5px 10px;
+    font-size: 16px;
+}
+
+div.produit div.description, div.controle  {
+	vertical-align : middle;
+	display : inline-block;
+}
+div.produit div.description {
+	height: 30%;
+	text-align : left;
+	font-size : 10px;
+	background-color: white;
+	margin : 6px 4px 2px 2px;
+    padding : 4px 6px;
+    font-size: 18px;
+    width: 76%;
+
+}
+	
+div.produit div.prix {
+	position : absolute;
+	top : 35px;
+	right : 27px;
+	font-size : 20px;
+	display : inline-block;
+	background-color : rgb(200,0,0);
+	color : white;
+	padding : 8px;
+	border-radius : 4px;
+}
+div.prix:after, #montant:after {
+	content : " €"
+}
+
+
+/* controle */
+/* buttons */
+button.commander {
+	width : 25px;
+	height : 25px;
+	background-size : cover;
+	border : solid 2px white;
+	opacity : 0.25;
+}
+
+button.commander {
+	background-image : url("./images/panier.jpg");
+}
+
+
+button.retirer {
+	width : 19px;
+	height : 19px;
+	background-size : cover;
+	border : solid 2px white;
+	box-shadow : 0px 0px 2px 1px rgba(200,0,0,0.6);	
+}
+
+button.retirer {
+	background-image : url("./images/poubelle.jpg");
+}
+
+input[type="number"] {
+	width : 34px;
+	font-size : 14px;
+	text-align : center;
+	border : none;
+	background-color : rgb(250,250,250);
+}
+.produit div.controle {
+	box-shadow : 0px 0px 2px 1px  rgba(0,150,0,0.3) inset;
+	background-color : rgba(0,150,0, 0.1);
+	text-align : center;	
+	border-radius : 4px;
+}
+
+.achat div.controle {
+
+	text-align : center;	
+}
+
+div.produit div.controle {
+    width: 11%;
+    height: 31%;
+}
+div.achat div.controle {
+	width : 22px;
+}
+div.controle button, div.controle input {
+	display : block;
+	margin : 12px auto;
+	border-radius : 2px;
+}
+
+
+/* achat */
+.achat {
+    height: 46px;
+    width: 96%;
+    text-align: left;
+    box-shadow: 0px 0px 4px 2px rgba(93, 196, 212, 0.8) inset;
+    padding: 6px;
+    margin: 4px 2px;
+}
+.achat * {
+	display : inline-block;
+	margin : 0px;
+	vertical-align : middle;
+	text-align : left;
+}
+.achat h4 {
+    vertical-align: middle;
+    font-size: 24px;
+	width : 49%;
+	height : 80%;
+	padding : 0px 2px;
+	font-weight : normal;
+	overflow : hidden;
+	text-overflow :  ellipsis;
+	color : #888888;	
+	padding : 0px;
+	margin : 0px 2px;
+}
+.achat figure {
+ width : 9%;	
+}
+
+.achat figure img {
+	width : 100%;
+}
+
+.achat .prix, .achat .quantite {
+	font-size: 31px;
+}
+.achat .prix {
+	margin-right : 16%;	
+}
+.achat .quantite:after {
+	content :"x";
+	margin-right : 2px;	
+}
+
+#total {
+	background-color : rgb(200,0,0);
+	color :white;
+	border-radius : 4px;
+	margin: 6px 3px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.content {
+	margin-top: auto;
+    background: black;
+    width: 100%;
+    height: 800px;
+    margin-left: 0;
+	margin: 0;
+	display: inline-flex;
+}
+.content .side-left{
+	width: 10%;
+    height: 90%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    background: RED;
+}
+.content .middle {
+	width: 70%;
+    height: 87%;
+    padding: 10px;
+    background: BLUE;
+    /* margin: auto; */
+    margin-right: 0px;
+    margin-top: 1%;
+    margin-left: 0%;
+    margin-bottom: 2%
+}
+.content .side-right{
+	margin: 0;
+    background: GREEN;
+    width: 10%;
+    height: 90%;
+    margin-left: 3%;
+    /* padding: 10px; */
+    margin-right: 2%;
+    margin-top: 1%;
+}
+.container .footer {
+	width: 100%;
+    height: 100px;
+    background: RED;
+}
